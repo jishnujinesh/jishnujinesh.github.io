@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Navigation */
+        header {
+            padding: 1rem 5%;
+            display: flex;
+            align-items: center;
+            background: white;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        /* Projects Section */
+        .projects-container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+        
+        .page-header {
+            margin-bottom: 2rem;
+        }
+        
+        .page-header h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Updated Image Styling */
+        .project-image-container {
+            width: 100%;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+        }
+        
+        .project-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-content h3 {
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+        }
+        
+        .project-content ul {
+            padding-left: 1.2rem;
+            margin-bottom: 1.2rem;
+            color: #555;
+        }
+        
+        .project-content li {
+            margin-bottom: 0.4rem;
+        }
+        
+        .project-link {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        
+        .project-link:hover {
+            background: #1a252f;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .project-image-container {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="Cv.html">Cv</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="projects-container">
+        <div class="page-header">
+            <h1>My Projects</h1>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 - AI Traffic Controller -->
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="imagess/image.jpg" alt="Traffic control system" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>AI Traffic Signal Control System</h3>
+                    <ul>
+                        <li>Developed an AI agent to optimize traffic light timing</li>
+                        <li>Simulated using Python with PyGame visualization</li>
+                        <li>Reduced average wait time by 25% in simulations</li>
+                        <li>Implemented adaptive timing based on vehicle density</li>
+                    </ul>
+                    <a href="https://bytewise-123.github.io/smart-traffic-system-ai/" class="project-link">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Project 2 - Personal Portfolio -->
+            <div class="project-card">
+    <div class="project-image-container">
+        <img src="imagess/image-expense.png" alt="Expense tracker interface" class="project-image">
+    </div>
+    <div class="project-content">
+        <h3>Personal Expense Tracker</h3>
+        <ul>
+            <li>Built with HTML, CSS, and JavaScript</li>
+            <li>Features:
+                <ul>
+                    <li>Add/delete transactions</li>
+                    <li>Automatic balance calculation</li>
+                    <li>Monthly spending charts</li>
+                </ul>
+            </li>
+            <li>Data persists using localStorage</li>
+        </ul>
+       
+    </div>
+</div>
+        </div>
+    </main>
+</body>
+</html>

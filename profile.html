@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jishnu Jinesh | Profile</title>
+    <style>
+        /* Reuse your existing styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Consistent Navigation */
+        header {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        /* Profile-specific styles */
+        .profile-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+        
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-header h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+        }
+        
+        .profile-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .profile-section {
+            margin-bottom: 2rem;
+        }
+        
+        .profile-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .profile-section p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        
+        .interest-tag {
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Consistent Navigation -->
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="cv.html">Cv</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="profile-container">
+        <div class="profile-header">
+            <h1>My Profile</h1>
+            <p>Get to know me better</p>
+        </div>
+        
+        <div class="profile-content">
+            <!-- Biography Section -->
+            <section class="profile-section">
+                <h2>About Me</h2>
+                <p>I am a passionate Artificial Intelligence and Data Science student with a strong interest in developing intelligent systems that solve real-world problems. My journey in technology began when I first discovered programming in high school, and since then I've been dedicated to expanding my knowledge in machine learning and web development.</p>
+                <p>What drives me is the potential of AI to transform industries and improve lives. I believe in continuous learning and pushing the boundaries of what's possible with technology.</p>
+            </section>
+            
+            <!-- Career Goals Section -->
+            <section class="profile-section">
+                <h2>Career Goals</h2>
+                <p>In the next 5 years, I aim to:</p>
+                <ul style="margin-left: 1.5rem; color: #555; margin-bottom: 1rem;">
+                    <li>Become a full-stack AI developer</li>
+                    <li>Contribute to open-source AI projects</li>
+                    <li>Develop applications that make AI accessible to non-technical users</li>
+                    <li>Specialize in natural language processing and computer vision</li>
+                </ul>
+                <p>Ultimately, I want to work at the intersection of AI and human-computer interaction, creating systems that are both powerful and intuitive.</p>
+            </section>
+            
+            <!-- Personal Interests Section -->
+            <section class="profile-section">
+                <h2>Personal Interests</h2>
+                <p>When I'm not coding, you can find me:</p>
+                <div class="interests-list">
+                    <span class="interest-tag">Photography</span>
+                    <span class="interest-tag">Hiking</span>
+                    <span class="interest-tag">Chess</span>
+                    <span class="interest-tag">Sci-fi Novels</span>
+                    <span class="interest-tag">Open-source Contributing</span>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

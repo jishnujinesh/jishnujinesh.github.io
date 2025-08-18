@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jishnu Jinesh | Education</title>
+    <style>
+        /* ----- Global Styles ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* ----- Navigation Bar (Matches your reference) ----- */
+        header {
+            padding: 1rem 5%;
+            display: flex;
+            align-items: center;
+            background: white;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: auto;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        /* ----- Education Timeline Styles ----- */
+        .education-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+        
+        .page-header {
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        /* Vertical line */
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #2c3e50;
+        }
+        
+        .education-item {
+            position: relative;
+            padding-bottom: 2.5rem;
+            padding-left: 2rem;
+        }
+        
+        /* Timeline dots */
+        .education-item::before {
+            content: '';
+            position: absolute;
+            left: -1px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #2c3e50;
+            border: 4px solid #f8f9fa;
+        }
+        
+        .education-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .education-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .education-details ul {
+            padding-left: 1.2rem;
+            color: #555;
+        }
+        
+        .education-details li {
+            margin-bottom: 0.3rem;
+        }
+        
+        /* ----- Responsive Design ----- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo {
+                margin-bottom: 1rem;
+            }
+            
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+            
+            .education-meta {
+                flex-direction: column;
+            }
+            
+            .education-meta span:last-child {
+                margin-top: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="Cv.html">Cv</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="education-container">
+        <div class="page-header">
+            <h1>Education</h1>
+            <p>My academic journey and qualifications</p>
+        </div>
+        
+        <div class="education-timeline">
+            <!-- Current Education -->
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>B.Tech in Artificial Intelligence and Data Science</h3>
+                    <div class="education-meta">
+                        <span>Rajagiri School of Engineering and Technology</span>
+                        <span>2023 - Present</span>
+                    </div>
+                    <div class="education-details">
+                        <ul>
+                            <li>CGPA: 7.5/10.0 (Expected graduation: 2027)</li>
+                            <li>Key Courses: Machine Learning, Data Structures,Data Mining</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Previous Education -->
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Higher Secondary Education (12th Grade)</h3>
+                    <div class="education-meta">
+                        <span>Sree Narayana Vidya Mandir , Talap</span>
+                        <span>2022 - 2023</span>
+                    </div>
+                    <div class="education-details">
+                        <ul>
+                            <li>Percentage: 80%</li>
+                            <li>Stream: Computer Science</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Education -->
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Secondary Education (10th Grade)</h3>
+                    <div class="education-meta">
+                        <span>Sree Narayana Vidya Mandir , Talap</span>
+                        <span>2021 - 2022</span>
+                    </div>
+                    <div class="education-details">
+                        <ul>
+                            <li>Percentage: 90%</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
